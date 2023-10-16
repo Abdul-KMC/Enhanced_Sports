@@ -1,0 +1,159 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation bar styling */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Header styling */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #333;
+}
+
+
+/* H2 stylink */
+
+h2 {
+    margin: 10px;
+}
+
+
+/* Paragraph stylink */
+
+p {
+    margin: 4px;
+}
+
+
+/* Section styling */
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Images container styling */
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images-container img {
+    width: 30%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+
+/* Grid styling for options */
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+/* Form styling */
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label,
+form input,
+form checkbox {
+    display: block;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Table styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+iframe {
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
