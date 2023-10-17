@@ -93,6 +93,41 @@ ul {
     gap: 20px;
 }
 
+#featured-products {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h4 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
 
 /* Form styling */
 
@@ -137,6 +172,9 @@ table td {
 iframe {
     margin: 20px;
     padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -150,6 +188,13 @@ footer {
 @media (max-width: 768px) {
     .images-container {
         flex-direction: column;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    #news img {
+        width: 100%;
     }
     nav {
         display: flex;
